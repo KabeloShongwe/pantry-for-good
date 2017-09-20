@@ -115,7 +115,7 @@ function getMenuItems(user) {
     title: 'Customers',
     link: 'customers/list',
     roles: [ADMIN_ROLE]
-  }, {
+  }/*, {
     title: 'Volunteers',
     link: 'volunteers/list',
     roles: [ADMIN_ROLE]
@@ -123,7 +123,7 @@ function getMenuItems(user) {
     title: 'Donors',
     link: 'donors/list',
     roles: [ADMIN_ROLE]
-  }]
+  }*/]
 
   const adminUserAccountItems = [{
     title: 'User Accounts',
@@ -131,33 +131,33 @@ function getMenuItems(user) {
     roles: [ADMIN_ROLE]
   }]
 
-  const foodItems = [{
-    title: 'Food Schedule',
-    link: 'schedule',
-    roles: [ADMIN_ROLE]
-  }, {
-    title: 'Packing List',
-    link: 'packing',
-    roles: [ADMIN_ROLE]
-  }, {
-    title: 'Inventory',
-    link: 'inventory',
-    roles: [ADMIN_ROLE]
-  }]
+  // const foodItems = [{
+  //   title: 'Food Schedule',
+  //   link: 'schedule',
+  //   roles: [ADMIN_ROLE]
+  // }, {
+  //   title: 'Packing List',
+  //   link: 'packing',
+  //   roles: [ADMIN_ROLE]
+  // }, {
+  //   title: 'Inventory',
+  //   link: 'inventory',
+  //   roles: [ADMIN_ROLE]
+  // }]
 
-  const deliveryItems = [{
-    title: 'Delivery',
-    link: 'drivers',
-    type: 'treeview',
-    roles: [ADMIN_ROLE],
-    items: [{
-      title: 'Drivers',
-      link: 'drivers/list',
-    }, {
-      title: 'Route Assignment',
-      link: 'drivers/routes',
-    }]
-  }]
+  // const deliveryItems = [{
+  //   title: 'Delivery',
+  //   link: 'drivers',
+  //   type: 'treeview',
+  //   roles: [ADMIN_ROLE],
+  //   items: [{
+  //     title: 'Drivers',
+  //     link: 'drivers/list',
+  //   }, {
+  //     title: 'Route Assignment',
+  //     link: 'drivers/routes',
+  //   }]
+  // }]
 
   const settingsItems = [{
     title: 'Settings',
@@ -182,8 +182,8 @@ function getMenuItems(user) {
   const items = [
     ...clientItems,
     ...adminClientItems,
-    ...foodItems,
-    ...deliveryItems,
+    // ...foodItems,
+    // ...deliveryItems,
     ...settingsItems,
     ...adminUserAccountItems
   ]
